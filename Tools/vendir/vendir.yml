@@ -1,0 +1,10 @@
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+directories:
+- path: config/_ytt_lib
+  contents:
+  - path: app
+    git:
+      url: https://github.com/carvel-dev/ytt-library-for-kubernetes
+      ref: origin/develop
+    newRootPath: app

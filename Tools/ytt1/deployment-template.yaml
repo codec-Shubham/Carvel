@@ -1,0 +1,17 @@
+#@ load("@ytt:data", "data") #@ data/values
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+  name: myapp-deployment 
+spec: 
+  replicas: #@ data.values.replicas
+  template: 
+    metadata: 
+      labels: 
+        app: myapp 
+    spec: 
+      containers: 
+        - name: myapp-container 
+          image: #@ data.values.image
+          ports: 
+            - containerPort: 80 

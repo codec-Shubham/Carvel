@@ -1,0 +1,6 @@
+# kbld.yaml 
+images: 
+  - name: web-app 
+    newRepo: shubhamdev2001/chandigarh-ai
+    tag: latest
+ 

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inshine-backend-deployment
+  labels: 
+    app: inshine-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: inshine-backend
+  template:
+    metadata: 
+      labels:
+        app: inshine-backend
+    spec: 
+      containers:
+      - name: frontend
+        image: shubhamdev2001/inshine-backend
+        ports: 
+        - containerPort: 8081 
+

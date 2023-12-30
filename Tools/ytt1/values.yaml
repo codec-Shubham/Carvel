@@ -1,0 +1,6 @@
+#@data/values-schema 
+---
+replicas: 3 
+image: shubhamdev2001/chandigarh-ai:latest 
+environment: production 
+ 

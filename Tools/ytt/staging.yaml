@@ -1,0 +1,4 @@
+#@ load("@ytt:overlay", "overlay")
+#@ data/values
+spec.replicas: 3
+spec.template.spec.containers[0].image: "nginx:1.20.0"

@@ -1,0 +1,6 @@
+#@ load("@ytt:overlay", "overlay")
+#@ data/values
+spec.replicas: 3
+spec.template.spec.containers[0].image: "nginx:1.21.0"
+spec.template.spec.containers[0].resources.limits.cpu: "0.5"
+spec.template.spec.containers[0].resources.limits.memory: "512Mi"

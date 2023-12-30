@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: null
+  template:
+    spec:
+      containers:
+      - name: my-app-container
+        image: null
+---
+spec.replicas: 1
+spec.template.spec.containers[0].image: nginx:1.19.10

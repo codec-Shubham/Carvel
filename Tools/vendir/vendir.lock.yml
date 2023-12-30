@@ -1,0 +1,9 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: 'Merge pull request #7 from carvel-dev/nh-fix-add-to-issues...'
+      sha: bba7985ed8ac94bb55b95cfaf20cbcd3521b8f88
+    path: app
+  path: config/_ytt_lib
+kind: LockConfig
